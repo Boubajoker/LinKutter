@@ -1,0 +1,48 @@
+body {
+    font-family: Arial;
+}
+.main-banner {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.additional-text {
+    text-align: center;
+    font-weight: 100;
+    font-size: 35px;
+
+}
+.banner-img {
+    width: 390px;
+    height: 125px;
+    border-radius: 10px;
+    transition: ease-in-out box-shadow 0.5s, ease-in-out background-color 1s, ease-in-out width 0.5s, ease-in-out height 0.5s;
+    margin-bottom: 25px;
+}
+.banner-img:hover {
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.842);
+    height: 130px;
+    width: 450px;
+}
+.text-type-box {
+    text-align: center;
+}
+.text-input {
+    border: none;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30px;
+    width: 750px;
+    outline: none;
+    padding-inline-end: 44px;
+    padding-inline-start: 15px;
+    position: relative;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+.text-input:focus {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    width: 750px;
+    height: 30px;
+    border-width: 0px;
+}

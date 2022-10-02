@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="700"
+   height="250"
+   viewBox="0 0 185.20832 66.145835"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="banner.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.104894"
+     inkscape:cx="219.02554"
+     inkscape:cy="121.73113"
+     inkscape:window-width="1920"
+     inkscape:window-height="1058"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="255.2281"
+       y="62.449429"
+       width="238.03188"
+       height="122.18366"
+       id="rect400" />
+    <rect
+       x="15.386091"
+       y="31.677246"
+       width="228.07617"
+       height="149.33559"
+       id="rect236" />
+  </defs>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       transform="matrix(22.211639,0,0,23.718424,-346.89828,-750.67984)"
+       id="text234"
+       style="font-size:3.27748px;line-height:1.25;font-family:Shruti;-inkscape-font-specification:'Shruti, Normal';word-spacing:0px;white-space:pre;shape-inside:url(#rect236);fill:#000000"><tspan
+         x="15.386719"
+         y="34.077896"
+         id="tspan994">Lin</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(12.618158,0,0,20.31021,-3137.9276,-1260.5373)"
+       id="text398"
+       style="font-size:3.27748px;line-height:1.25;font-family:Shruti;-inkscape-font-specification:'Shruti, Normal';word-spacing:0px;white-space:pre;shape-inside:url(#rect400)"><tspan
+         x="255.22852"
+         y="64.84938"
+         id="tspan998"><tspan
+           style="fill:#800000"
+           id="tspan996">Kutter</tspan></tspan></text>
+    <path
+       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:3.175;stroke-dasharray:none;stroke-opacity:1"
+       id="path456"
+       sodipodi:type="arc"
+       sodipodi:cx="106.14439"
+       sodipodi:cy="9.6591024"
+       sodipodi:rx="4.3345661"
+       sodipodi:ry="4.1098585"
+       sodipodi:start="0"
+       sodipodi:end="6.2716038"
+       sodipodi:arc-type="arc"
+       d="m 110.47895,9.6591024 a 4.3345661,4.1098585 0 0 1 -4.32201,4.1098416 4.3345661,4.1098585 0 0 1 -4.34705,-4.0860425 4.3345661,4.1098585 0 0 1 4.29685,-4.1335025 4.3345661,4.1098585 0 0 1 4.37192,4.0621061"
+       sodipodi:open="true" />
+    <path
+       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:3.175;stroke-dasharray:none;stroke-opacity:1"
+       id="path1059"
+       sodipodi:type="arc"
+       sodipodi:cx="107.62699"
+       sodipodi:cy="59.776783"
+       sodipodi:rx="4.3345661"
+       sodipodi:ry="4.1098585"
+       sodipodi:start="0"
+       sodipodi:end="6.2716038"
+       sodipodi:arc-type="arc"
+       d="m 111.96156,59.776783 a 4.3345661,4.1098585 0 0 1 -4.32202,4.109841 4.3345661,4.1098585 0 0 1 -4.34704,-4.086042 4.3345661,4.1098585 0 0 1 4.29684,-4.133502 4.3345661,4.1098585 0 0 1 4.37193,4.062106"
+       sodipodi:open="true" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.15904;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1165"
+       width="27.690779"
+       height="2.2384458"
+       x="75.709915"
+       y="-73.841469"
+       transform="matrix(0.5118303,0.85908657,-0.54862915,0.83606582,0,0)"
+       inkscape:transform-center-x="-24.228162"
+       inkscape:transform-center-y="-7.3190527" />
+  </g>
+</svg>

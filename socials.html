@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A search engine to cut your links and send them !">
+    <meta name="theme-color" content="rgb(255, 255, 255)">
+    <link rel="stylesheet" href="./CSS/navbar.css">
+    <link rel="stylesheet" href="./CSS/socials.css">
+    <link rel="shortcut icon" href="./assets/icon/icon_32.svg" type="image/x-icon">
+    <title>Linkutter -- Social Medias</title>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <button class="navbar-btns" id="navbar_btn_01">Home</button>
+        <button class="navbar-btns" id="navbar_btn_02">Credits</button>
+        <button class="navbar-btns" id="navbar_btn_03">Social Medias</button>
+    </nav>
+    <div class="boubajoker-profiles">
+        <h2>Boubajoker's Profiles</h2>
+        <img src="./assets/img/github_icon.svg" title="Boubajoker's Github profile" class="social-medias-img" id="boubajoker_github_profile">
+        <img src="./assets/img/twitter_icon.svg" title="Boubajoker's Twitter profile" class="social-medias-img" id="boubajoker_twitter_profile">
+        <img src="./assets/img/instagram_icon.svg" title="Boubajoker's Instagram profile" class="social-medias-img" id="boubajoker_instagram_profile">
+    </div>
+    <div class="lazar-profiles">
+        <h2>Lazar's Profiles</h2>
+        <img src="./assets/img/github_icon.svg" title="Lazar's Github profile" class="social-medias-img" id="lazar_github_profile">
+        <img src="./assets/img/twitter_icon.svg" title="Lazar's Twitter profile" class="social-medias-img" id="lazar_twitter_profile">
+        <img src="./assets/img/instagram_icon.svg" title="Lazar's Instagram profile" class="social-medias-img" id="lazar_instagram_profile">
+    </div>
+    <script src="./JS/index.js"></script>
+    <script>
+        let boubajoker_github_profile = document.querySelector('#boubajoker_github_profile');
+        let boubajoker_twitter_profile = document.querySelector('#boubajoker_twitter_profile');
+        let boubajoker_instagram_profile = document.querySelector('#boubajoker_instagram_profile');
+        let lazar_github_profile = document.querySelector('#lazar_github_profile');
+        let lazar_twitter_profile = document.querySelector('#lazar_twitter_profile');
+        let lazar_instagram_profile = document.querySelector('#lazar_instagram_profile');
+
+        boubajoker_github_profile.addEventListener('click', ()=>{
+            window.location = "https://github.com/Boubajoker/";
+        });
+
+        boubajoker_twitter_profile.addEventListener('click', ()=>{
+            window.location = "./";
+        });
+
+        boubajoker_instagram_profile.addEventListener('click', ()=>{
+            window.location = "./";
+        });
+
+        
+        lazar_github_profile.addEventListener('click', ()=>{
+            window.location = "https://github.com/Lazar/";
+        });
+
+        lazar_twitter_profile.addEventListener('click', ()=>{
+            window.location = "./";
+        });
+
+        lazar_instagram_profile.addEventListener('click', ()=>{
+            window.location = "./";
+        });
+    </script>
+</body>
+</html>
