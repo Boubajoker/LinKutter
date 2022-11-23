@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A search engine to cut your links and send them !">
+    <meta name="description" content="A search engine to cut your links !">
     <meta name="theme-color" content="rgb(255, 255, 255)">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/navbar.css">
+    <link rel="stylesheet" href="./CSS/homepage.css">
+    <link rel="stylesheet" href="./CSS/index.css">
     <link rel="shortcut icon" href="./assets/icon/icon_32.svg" type="image/x-icon">
     <title>Linkutter -- Home</title>
 </head>
 <body>
     <nav class="navbar" id="navbar">
-        <button class="navbar-btns" id="navbar_btn_01">Home</button>
-        <button class="navbar-btns" id="navbar_btn_02">Credits</button>
-        <button class="navbar-btns" id="navbar_btn_03">Social Medias</button>
+        <button title="Refresh the page." type="button" class="navbar-btns" id="navbar_btn_01">Home</button>
+        <button title="Get to know wich tools helped us to create Linkutter ! (redirects to github.com)" type="button" class="navbar-btns" id="navbar_btn_02">Credits</button>
+        <button title="Our Social Medias (best way to contact us !)" type="button" class="navbar-btns" id="navbar_btn_03">Social Medias</button>
     </nav>
     <div class="main-banner">
         <img class="banner-img" src="./assets/img/banner.svg" alt="">
@@ -24,8 +24,15 @@
         <h1 class="additional-text">Search, Cut, Share</h1>
     </div>
     <div class="text-type-box" id="text_type_box">
-        <input type="search" autocomplete="on" spellcheck="false" role="combobox" placeholder="Seach on Google, Youtube, Twitter..." class="text-input" id="text_input">
+        <!--@in_developement: `search-box`-->
+        <input type="search" autocomplete="on" spellcheck="false" role="textbox" placeholder="Search on Google, Youtube, Twitter..." class="text-input" id="text_input">
     </div>
+    <div class="custom-menu" id="custom_menu">
+        <button class="btn b1"><img src="./assets/img/credits_icon.svg">Credits</button>
+        <button class="btn b2"><img src="./assets/img/reload_icon.svg">Reload page</button>
+        <button class="btn b3"><img src="./assets/img/share_icon.svg">Share this project</button>
+    </div>
+    <div class="popup" id="popup"></div>
     <script src="./JS/index.js"></script>
     <script src="./JS/home.js"></script>
 </body>

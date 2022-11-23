@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A search engine to cut your links and send them !">
     <meta name="theme-color" content="rgb(255, 255, 255)">
-    <link rel="stylesheet" href="./CSS/navbar.css">
     <link rel="stylesheet" href="./CSS/socials.css">
+    <link rel="stylesheet" href="./CSS/index.css">
     <link rel="shortcut icon" href="./assets/icon/icon_32.svg" type="image/x-icon">
     <title>Linkutter -- Social Medias</title>
 </head>
 <body>
     <nav class="navbar" id="navbar">
-        <button class="navbar-btns" id="navbar_btn_01">Home</button>
-        <button class="navbar-btns" id="navbar_btn_02">Credits</button>
-        <button class="navbar-btns" id="navbar_btn_03">Social Medias</button>
+        <button title="Go to the main menu." type="button" class="navbar-btns" id="navbar_btn_01">Home</button>
+        <button title="Get to know wich tools helped us to create Linkutter ! (redirects to github.com)" type="button" class="navbar-btns" id="navbar_btn_02">Credits</button>
+        <button title="Refresh the page." type="button" class="navbar-btns" id="navbar_btn_03">Social Medias</button>
     </nav>
     <div class="boubajoker-profiles">
         <h2>Boubajoker's Profiles</h2>
@@ -29,39 +29,13 @@
         <img src="./assets/img/twitter_icon.svg" title="Lazaras's Twitter profile" class="social-medias-img" id="lazaras_twitter_profile">
         <img src="./assets/img/instagram_icon.svg" title="Lazaras's Instagram profile" class="social-medias-img" id="lazaras_instagram_profile">
     </div>
+    <div class="custom-menu" id="custom_menu">
+        <button class="btn b1"><img src="./assets/img/credits_icon.svg">Credits</button>
+        <button class="btn b2"><img src="./assets/img/reload_icon.svg">Reload page</button>
+        <button class="btn b3"><img src="./assets/img/share_icon.svg">Share</button>
+    </div>
+    <div class="popup" id="popup"></div>
     <script src="./JS/index.js"></script>
-    <script>
-        let boubajoker_github_profile = document.querySelector('#boubajoker_github_profile');
-        let boubajoker_twitter_profile = document.querySelector('#boubajoker_twitter_profile');
-        let boubajoker_instagram_profile = document.querySelector('#boubajoker_instagram_profile');
-        let lazaras_github_profile = document.querySelector('#lazaras_github_profile');
-        let lazaras_twitter_profile = document.querySelector('#lazaras_twitter_profile');
-        let lazaras_instagram_profile = document.querySelector('#lazaras_instagram_profile');
-
-        boubajoker_github_profile.addEventListener('click', ()=>{
-            window.location = "https://github.com/Boubajoker/";
-        });
-
-        boubajoker_twitter_profile.addEventListener('click', ()=>{
-            window.location = "./";
-        });
-
-        boubajoker_instagram_profile.addEventListener('click', ()=>{
-            window.location = "./";
-        });
-
-        
-        lazaras_github_profile.addEventListener('click', ()=>{
-            window.location = "https://github.com/Lazaras/";
-        });
-
-        lazaras_twitter_profile.addEventListener('click', ()=>{
-            window.location = "./";
-        });
-
-        lazaras_instagram_profile.addEventListener('click', ()=>{
-            window.location = "./";
-        });
-    </script>
+    <script src="./JS/socials.js"></script>
 </body>
 </html>
