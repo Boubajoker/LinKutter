@@ -16,7 +16,7 @@
         - Improved user comfort !
         - :new: NEW: custom context menu !
         - :new: popup to display info's
-    - Fixed a lot bugs :bug: !
+    - Fixed a lot of bugs :bug: !
 }
 
 - v0.0.1 Alpha B-2 {master} {
@@ -30,4 +30,10 @@
         - Minor bugs fixed :bug: !
      
     Passing to Closed Alpha to Open Public Alpha !
+}
+
+- v0.0.1 Alpha B-2 Update0.1 {
+    - Stability improved and better performances :rocket::muscle: !
+        - Removed un-used stuff. 
+    - Fixed some bugs :bug::gun: !
 }
