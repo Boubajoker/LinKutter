@@ -1,19 +1,33 @@
 body {
     font-family: Arial;
 }
+
 h2 {
     font-weight: 100;
 }
+
 .social-medias-img {
     width: 35px;
     margin-left: 10px;
-    background-color: rgb(55, 55, 55);
-    border-radius: 5px;
+    background-color: var(--linkutter-third-color);
+    border-radius: 50%;
     cursor: pointer;
     transition: ease-in-out box-shadow 0.5s, ease-in-out background-color 0.5s;
+    box-shadow: 0px 0px 5px var(--linkutter-secondary-color);
 }
 
 .social-medias-img:hover {
-    box-shadow: 0px 0px 15px rgb(255, 0, 0);
-    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 15px var(--linkutter-primary-color);
+    background-color: var(--linkutter-primary-color);
+}
+
+.name-title {
+    font-family: Calibri;
+    font-weight: 600;
+    transition: color ease-in-out 0.5s, text-shadow ease-in-out 0.5s;
+}
+
+.name-title:hover {
+    color: var(--linkutter-primary-color);
+    text-shadow: 0px 0.5px 5px var(--linkutter-primary-color);
 }

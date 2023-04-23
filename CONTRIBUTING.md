@@ -2,4 +2,4 @@
 
 ## Module Contribution
 
-For any contributions / modifications validations, fell free to contact us by our social medias (not aividable yet) !
+For any contributions / modifications validations, feel free to contact us on our social medias (not aividable yet) !

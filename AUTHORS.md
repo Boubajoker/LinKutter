@@ -1,7 +1,7 @@
 # Linkutter edited & created by:
 
-Project Director / Programmer back-end, front-end:
+Project co-founder / Project Director / Programmer back-end, front-end:
 - Boubajoker
 
-Marketing Project Manager / Progammer front-end:    
-- Lazaras
+Project co-founder / Project Marketing Director / Progammer front-end:    
+- Lazarsas

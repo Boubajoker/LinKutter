@@ -63,5 +63,6 @@
             "bold": true,
             "italic": true
         }
-    ]
+    ],
+    "liveServer.settings.port": 3520
 }

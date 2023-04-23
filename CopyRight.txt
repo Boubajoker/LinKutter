@@ -3,8 +3,8 @@
 Linkutter Copyright (c) Boubajoker 2022. All right reserved.
 Project under MIT License.
 
-Linkutter therms:
-    DO NOT DO A COPY OF THIS PROJECT WITHOUT THE FOLLOWING FILES:
+Linkutter therms and conditions:
+    DO NOT MAKE A COPY OF THIS PROJECT WITHOUT THE FOLLOWING FILES:
     - CopyRight.txt
     - ThirdPartyNotices.md
     - AUTHORS.md

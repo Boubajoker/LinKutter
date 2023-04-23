@@ -1,45 +1,47 @@
 /**Linkutter Copyright (c) Boubajoker 2022. All right reserved. Project under MIT License.**/
 
-const boubajoker_github_profile = document.querySelector('#boubajoker_github_profile');
-const boubajoker_twitter_profile = document.querySelector('#boubajoker_twitter_profile');
-const boubajoker_instagram_profile = document.querySelector('#boubajoker_instagram_profile');
-const lazaras_github_profile = document.querySelector('#lazaras_github_profile');
-const lazaras_twitter_profile = document.querySelector('#lazaras_twitter_profile');
-const lazaras_instagram_profile = document.querySelector('#lazaras_instagram_profile');
+let boubajoker_github_profile = document.querySelector('#boubajoker_github_profile');
+let boubajoker_twitter_profile = document.querySelector('#boubajoker_twitter_profile');
+let boubajoker_instagram_profile = document.querySelector('#boubajoker_instagram_profile');
+let lazarsas_github_profile = document.querySelector('#lazarsas_github_profile');
+let lazarsas_twitter_profile = document.querySelector('#lazarsas_twitter_profile');
+let lazarsas_instagram_profile = document.querySelector('#lazarsas_instagram_profile');
+let name_title_01 = document.querySelector('#name_title_01');
+let name_title_02 = document.querySelector('#name_title_02');
 
 boubajoker_github_profile.addEventListener('click', ()=>{
     if (this.check_network()) {
         window.open("https://github.com/Boubajoker/", "_blank");
     };
 });
-
 boubajoker_twitter_profile.addEventListener('click', ()=>{
     if (this.check_network()) {
-        window.location = "./";
+        this.display_popup(0.7, 0.9, "Not aividable yet");
     };
 });
-
 boubajoker_instagram_profile.addEventListener('click', ()=>{
     if (this.check_network()) {
-        window.location = "./";
+        this.display_popup(0.7, 0.9, "Not aividable yet");
     };
 });
 
-
-lazaras_github_profile.addEventListener('click', ()=>{
+lazarsas_github_profile.addEventListener('click', ()=>{
     if (this.check_network()) {
-        window.open("https://github.com/Lazaras/", "_blank");
+        window.open("https://github.com/Lazarsas/", "_blank");
+    };
+});
+lazarsas_twitter_profile.addEventListener('click', ()=>{
+    if (this.check_network()) {
+        this.display_popup(0.7, 0.9, "Not aividable yet");
+    };
+});
+lazarsas_instagram_profile.addEventListener('click', ()=>{
+    if (this.check_network()) {
+        this.display_popup(0.7, 0.9, "Not aividable yet");
     };
 });
 
-lazaras_twitter_profile.addEventListener('click', ()=>{
-    if (this.check_network()) {
-        window.location = "./";
-    };
-});
-
-lazaras_instagram_profile.addEventListener('click', ()=>{
-    if (this.check_network()) {
-        window.location = "./";
-    };
-});
+if (dark_mode) {
+    name_title_01.style.color = "rgb(255, 255, 255)";
+    name_title_02.style.color = "rgb(255, 255, 255)";
+};

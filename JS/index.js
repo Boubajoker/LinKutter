@@ -1,18 +1,25 @@
 /**Linkutter Copyright (c) Boubajoker 2022. All right reserved. Project under MIT License.**/
 
-const navbar_btn_01 = document.querySelector('#navbar_btn_01');
-const navbar_btn_02 = document.querySelector('#navbar_btn_02');
-const navbar_btn_03 = document.querySelector('#navbar_btn_03');
-const custom_menu = document.querySelector('#custom_menu');
-const popup = document.querySelector('#popup');
-const btn_01 = document.querySelector('.b1');
-const btn_02 = document.querySelector('.b2');
-const btn_03 = document.querySelector('.b3');
-const date = new Date();
-const style_properties = ['display', 'animation', 'top', 'left'];
-    
+let navbar_btn_01 = document.querySelector('#navbar_btn_01');
+let navbar_btn_02 = document.querySelector('#navbar_btn_02');
+let navbar_btn_03 = document.querySelector('#navbar_btn_03');
+let navbar_btn_04 = document.querySelector('#navbar_btn_04');
+let custom_menu = document.querySelector('#custom_menu');
+let popup = document.querySelector('#popup');
+let btn_01 = document.querySelector('.b1');
+let btn_02 = document.querySelector('.b2');
+let btn_03 = document.querySelector('.b3');
+let close_version_banner_btn = document.querySelector('#close_version_banner_btn');
+let version_banner = document.querySelector('#version_banner');
+let version_banner_text = document.querySelector('#version_banner_text');
+let date = new Date();
+let style_properties = ['display', 'animation', 'top', 'left'];
+let version = "0.0.1 Alpha B-2";
+let activate_check_network = true;
+let dark_mode = false;
 
-function display_popup(fade_in_time, fade_out_time) {
+function display_popup(fade_in_time, fade_out_time, text) {
+    popup.innerText = text;
     popup.style.animation = `fade ease-in ${fade_in_time}s`;
     setTimeout(()=>{
         popup.style.display = "block";
@@ -29,15 +36,24 @@ function display_popup(fade_in_time, fade_out_time) {
     }, 2000);
 };
 
+if (
+    document.URL === 'http://127.0.0.1:3520/'
+    || document.URL === 'http://127.0.0.1:3520/index.html'
+    || document.URL === 'http://127.0.0.1:3520/socials.html'
+) {
+    version_banner_text.innerText = version + "[INDEV]";
+    activate_check_network = false;
+} else {
+    version_banner_text.innerText = version;
+};
+
 //@beta `check_network` function.
 function check_network() {
-    let activate = false;
-    
-    if (activate) {
+    if (activate_check_network) {
         document.body.style.cursor = "progress";
         async function check_network_bg() {
             try {
-                const online_check = await fetch('https://jsonplaceholder.typicode.com/posts/');
+                let online_check = await fetch('https://jsonplaceholder.typicode.com/posts/');
 
                 return online_check.status >= 200 && online_check.status < 300;
             } catch (err) {
@@ -46,11 +62,10 @@ function check_network() {
         };
 
         setInterval(async () => {
-            const response = await check_network_bg();
+            let response = await check_network_bg();
 
             if (response === false) {
-                popup.innerText = "No Internet";
-                this.display_popup(0.7, 0.9);
+                this.display_popup(0.7, 0.9, "No Internet");
 
                 return false;
             } else {
@@ -60,7 +75,7 @@ function check_network() {
             };
         }, 30000);
     } else {
-        console.warn('Not Activated');
+        console.warn('[WARN]: Running website in localhost dev-version.')
         return true;
     }
 };
@@ -83,20 +98,24 @@ navbar_btn_03.addEventListener('click', ()=>{
     };
 });
 
+
 if (date.getHours() >= 18) {
     document.body.style.background = "rgb(0, 0, 0, 0.750)";
+    dark_mode = true;
+} else {
+    dark_mode = false;
 };
-
-console.log('%c<!--Linkutter Copyright (c) Boubajoker 2022. All right reserved. Project under MIT License.--!>', 'color: rgb(255, 0, 0); font-size: 14px;');
-console.log('%c<--Developed by Boubajoker and Lazaras.-->', 'color: rgb(0, 255, 0); background-color: rgb(0, 0, 0); border-radius: 5px; font-size: 14px;');
 
 document.addEventListener('contextmenu', (e)=>{
     e.preventDefault();
-
+    
     custom_menu.style.display = 'block';
     custom_menu.style.top = `${e.clientY}px`;
     custom_menu.style.left = `${e.clientX}px`;
     custom_menu.style.animation = 'fade 0.3s ease-in';
+    btn_01.style.animation = 'fade 0.2s ease-in-out';
+    btn_02.style.animation = 'fade 0.3s ease-in-out';
+    btn_03.style.animation = 'fade 0.4s ease-in-out';
 });
 
 btn_01.addEventListener('click', ()=>{
@@ -106,16 +125,30 @@ btn_01.addEventListener('click', ()=>{
 });
 
 btn_02.addEventListener('click', ()=>{
-    document.location.reload();
+    document.body.style.animation = "fade-out ease-out 0.8s";
+    sessionStorage.setItem('Fade_Reload', true);
+    setTimeout(()=>{document.location.reload(); document.body.style.display = "none"}, 800);
 });
 
 btn_03.addEventListener('click', ()=>{
     navigator.clipboard.writeText(document.location.origin);
-    popup.innerText = `Text copied ! (${document.location.origin})`;
-    this.display_popup(0.7, 0.9);
+    this.display_popup(0.7, 0.9, `Text copied ! (${document.location.origin})`);
 });
 
-document.addEventListener('click', ()=>{
+if (sessionStorage.getItem('Fade_Reload')) {
+    document.body.style.animation = "fade ease-in 0.8s";
+
+    setTimeout(()=>{
+        document.body.style.display = "block"; 
+        sessionStorage.removeItem('Fade_Reload');
+        setTimeout(()=>{
+            document.body.style.removeProperty('animation');
+            document.body.style.removeProperty('display');
+        }, 1000)
+    }, 800);
+};
+
+document.addEventListener('click', (e)=>{
     if (custom_menu.style.display === "block") {
         custom_menu.style.animation = 'fade-out 0.6s ease-out';
         setTimeout(()=>{
@@ -126,3 +159,15 @@ document.addEventListener('click', ()=>{
         }, 500);
     }
 });
+
+close_version_banner_btn.addEventListener('click', ()=>{
+    version_banner.remove();
+    sessionStorage.setItem('version_banner_deleted', true);
+});
+
+if (sessionStorage.getItem('version_banner_deleted')) {
+    version_banner.remove();
+};
+
+console.log(`%c<!--Linkutter Copyright (c) Boubajoker ${date.getUTCFullYear()}. All right reserved. Project under MIT License.--!>`, `color: rgb(${date.getDate()}0, 0, 0); font-size: 14px; background-color: rgb(255, 255, 255); border-radius: 5px;`);
+console.log('%c<!--Developed by Boubajoker and Lazarsas.--!>', 'color: rgb(0, 255, 0); background-color: rgb(0, 0, 0); border-radius: 5px; font-size: 14px;');

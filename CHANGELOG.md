@@ -18,3 +18,16 @@
         - :new: popup to display info's
     - Fixed a lot bugs :bug: !
 }
+
+- v0.0.1 Alpha B-2 {master} {
+    - Stability improved and better performances :rocket: :muscle: !
+    - Added some features :+1: !
+        - :new: version banner !
+        - Improved UI and UX :100: :+1: !
+        - Main feature added ! :100:
+    - Fixed some bugs :bug::gun:!
+        - Fixed developper mode in public version :100: !
+        - Minor bugs fixed :bug: !
+     
+    Passing to Closed Alpha to Open Public Alpha !
+}

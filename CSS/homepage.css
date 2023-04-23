@@ -1,47 +1,88 @@
 body {
     font-family: Arial;
 }
+
 .main-banner {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.additional-text {
+
+.additional-text-box {
     text-align: center;
     font-weight: 100;
     font-size: 35px;
-
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
+
+.additional-text { transition: text-shadow 0.5s ease-in-out, color 0.5s ease-in-out; cursor: default; }
+
+.additional-text:hover {
+    color: var(--linkutter-primary-color);
+    text-shadow: 0px 0px 10px var(--linkutter-primary-color);
+}
+
 .banner-img {
     width: 390px;
     height: 125px;
     border-radius: 10px;
-    transition: ease-in-out box-shadow 0.5s, ease-in-out background-color 1s, ease-in-out width 0.5s, ease-in-out height 0.5s, ease-in-out border-radius 0.5s;
-    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    background-color: var(--linkutter-fourth-color);
+    box-shadow: 0px 0px 20px var(--linkutter-secondary-color);
 }
-.banner-img:hover {
-    box-shadow: 0px 0px 20px rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.650);
-    height: 130px;
-    width: 100%;
-    border-radius: 100px;
-}
+
 .text-type-box {
     text-align: center;
 }
+
 .text-input {
     border: none;
     border-radius: 15px;
     font-family: Arial;
     height: 30px;
-    width: 100%;
+    width: 50%;
     outline: none;
     padding-inline-end: 44px;
     padding-inline-start: 15px;
     position: relative;
-    box-shadow: 0px 0px 5px rgb(0, 0, 0);
-    transition: ease-in-out width 0.35s;
+    box-shadow: 0px 0px 5px var(--linkutter-secondary-color);
+    transition: ease-in-out box-shadow 0.3s;
+    margin-top: 70px;
 }
+
 .text-input:focus {
-    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px var(--linkutter-primary-color);
+}
+
+.main-web-app-container {
+    background-color: var(--linkutter-fifth-color);
+    padding: 15px;
+    margin: 0px;
+}
+
+.short-link-result {
+    margin-top: 15px;
+}
+
+.input-btn {
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px var(--linkutter-third-color);
+    border-width: 0px;
+    cursor: pointer;
+    font-weight: 400;
+    margin-left: 10px;
+    transition: box-shadow 0.4s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out, font-weight 0.3s ease-in-out, text-shadow ease-in-out 0.3s;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--linkutter-third-color);
+}
+
+.input-btn:hover {
+    text-decoration: none;
+    box-shadow: 0px 0px 10px var(--linkutter-primary-color);
+    background-color: var(--linkutter-third-color);
+    color: var(--linkutter-primary-color);
+    text-shadow: 0px 0px 15px var(--linkutter-primary-color);
+    font-weight: 700;
 }
