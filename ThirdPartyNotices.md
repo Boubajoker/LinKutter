@@ -447,8 +447,6 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-Thanks to all dev's :+1: !!
-
 # Bitly
 
 Bitly Terms of Service
@@ -521,3 +519,5 @@ Government Use. The Bitly Services are “commercial items” as that term is de
 General. The failure of Bitly to enforce any right or provision of these Terms will not constitute a waiver of future enforcement of that right or provision. The waiver of any such right or provision will be effective only if in writing and signed by a duly authorized representative of Bitly. Except as expressly set forth in these Terms, the exercise by either party of any of its remedies under these Terms will be without prejudice to its other remedies under these Terms or otherwise. If for any reason a court of competent jurisdiction finds any provision of these Terms invalid or unenforceable, that provision will be enforced to the maximum extent permissible and the other provisions of these Terms will remain in full force and effect.
 Publicity. Customer grants Bitly the right to use Customer’s logos or trademarks in marketing or publicity materials and on its website to identify Customer as a customer that uses the Bitly Services.
 Contacting Bitly. If you have any questions about these Terms, please contact us at support@bitly.com.
+
+Thanks to all these amazing projects :+1: !!

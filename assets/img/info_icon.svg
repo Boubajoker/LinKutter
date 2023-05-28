@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 4.2333332 4.2333333"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="info_icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="17.678304"
+     inkscape:cx="8.1455776"
+     inkscape:cy="8.2869939"
+     inkscape:window-width="1920"
+     inkscape:window-height="1058"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#666666;stroke:none;stroke-width:1.38581;stroke-linecap:round"
+       id="path234"
+       sodipodi:type="arc"
+       sodipodi:cx="2.1218822"
+       sodipodi:cy="2.121882"
+       sodipodi:rx="2.1112993"
+       sodipodi:ry="2.121882"
+       sodipodi:start="3.1579825"
+       sodipodi:end="3.139942"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="M 0.01086649,2.0871062 A 2.1112993,2.121882 0 0 1 2.1469633,1.4972649e-4 2.1112993,2.121882 0 0 1 4.2331241,2.1375192 2.1112993,2.121882 0 0 1 2.115845,4.2437552 2.1112993,2.121882 0 0 1 0.0105858,2.1253845" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.08072px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';word-spacing:0px;stroke-width:0.162784;fill:#ffffff"
+       x="1.5959107"
+       y="3.5167704"
+       id="text1051"
+       transform="scale(1.0352187,0.96597948)"><tspan
+         sodipodi:role="line"
+         id="tspan1049"
+         style="stroke-width:0.162784;fill:#ffffff"
+         x="1.5959107"
+         y="3.5167704">i</tspan></text>
+  </g>
+</svg>

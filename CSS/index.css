@@ -7,6 +7,7 @@
     --linkutter-fifth-color: rgba(0, 0, 0, 0.550);
 }
 body {
+    font-family: Arial;
     margin: 0;
 }
 
@@ -118,10 +119,9 @@ body {
     font-family: Consolas;
     font-weight: 700;
     color: var(--linkutter-third-color);
-    transition: color ease-in 0.5s, text-shadow ease-in 0.5s;
+    transition: color ease-in 0.5s;
 }
 .version-banner-text:hover {
-    text-shadow: 0px 0.5px 5px var(--linkutter-primary-color);
     color: var(--linkutter-primary-color);
 }
 
@@ -129,7 +129,7 @@ body {
     width: 85px;
 }
 footer {
-    margin-top: 325.5px;
+    margin-top: 310.5px;
     padding: 7px 15px;
     background: var(--linkutter-fifth-color);
 }

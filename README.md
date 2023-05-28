@@ -10,6 +10,8 @@ Linkutter is a link shortener powered by bitly to "cut" links into shorter links
 
 1. Open Linkutter at the following URL: [`https://boubajoker.github.io/Linkutter/`](https://boubajoker.github.io/Linkutter/)
 
-2. Type in the search-bar the keyword that you want.
+2. Type in the text entry the URL that you want to shorten.
 
-3. And "Voilà !" your link is ready to be shared and used !
+3. Click on the button "Cut it !".
+
+4. And "Voilà !" your link is ready to be shared and used !

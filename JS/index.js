@@ -14,7 +14,7 @@ let version_banner = document.querySelector('#version_banner');
 let version_banner_text = document.querySelector('#version_banner_text');
 let date = new Date();
 let style_properties = ['display', 'animation', 'top', 'left'];
-let version = "0.0.1 Alpha B-2";
+let version = "0.0.1 Alpha B-2Update0.1";
 let activate_check_network = true;
 let dark_mode = false;
 
@@ -65,11 +65,13 @@ function check_network() {
             let response = await check_network_bg();
 
             if (response === false) {
+                document.body.style.cursor = "default";
                 this.display_popup(0.7, 0.9, "No Internet");
 
                 return false;
             } else {
                 console.log('%c[LOG]: Device is online', 'color: rgb(0, 255, 0);');
+                document.body.style.cursor = "default";
 
                 return true;
             };

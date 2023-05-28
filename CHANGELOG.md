@@ -37,3 +37,9 @@
         - Removed un-used stuff. 
     - Fixed some bugs :bug::gun: !
 }
+
+- v0.0.1 Alpha B-2 Update0.2 {
+    - Stability improved and better performances :rocket::muscle: !
+        - Removed un-used stuff. 
+    - Fixed some bugs :bug::gun: !
+}
