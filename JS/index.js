@@ -15,7 +15,6 @@ let version_banner_text = document.querySelector('#version_banner_text');
 let date = new Date();
 let style_properties = ['display', 'animation', 'top', 'left'];
 let version = "0.0.1 Alpha B-2Update0.1";
-let activate_check_network = true;
 let dark_mode = false;
 
 function display_popup(fade_in_time, fade_out_time, text) {
@@ -42,62 +41,20 @@ if (
     || document.URL === 'http://127.0.0.1:3520/socials.html'
 ) {
     version_banner_text.innerText = version + "[INDEV]";
-    activate_check_network = false;
 } else {
     version_banner_text.innerText = version;
 };
 
-//@beta `check_network` function.
-function check_network() {
-    if (activate_check_network) {
-        document.body.style.cursor = "progress";
-        async function check_network_bg() {
-            try {
-                let online_check = await fetch('https://jsonplaceholder.typicode.com/posts/');
-
-                return online_check.status >= 200 && online_check.status < 300;
-            } catch (err) {
-                return false;
-            }
-        };
-
-        setInterval(async () => {
-            let response = await check_network_bg();
-
-            if (response === false) {
-                document.body.style.cursor = "default";
-                this.display_popup(0.7, 0.9, "No Internet");
-
-                return false;
-            } else {
-                console.log('%c[LOG]: Device is online', 'color: rgb(0, 255, 0);');
-                document.body.style.cursor = "default";
-
-                return true;
-            };
-        }, 30000);
-    } else {
-        console.warn('[WARN]: Running website in localhost dev-version.')
-        return true;
-    }
-};
-
 navbar_btn_01.addEventListener('click', ()=>{
-    if (this.check_network()) {
-        window.location = "./";
-    };
+    window.location = "./";
 });
 
 navbar_btn_02.addEventListener('click', ()=>{
-    if (this.check_network()) {
-        window.open("https://github.com/Boubajoker/LinKutter/", "_blank");
-    };
+    window.open("https://github.com/Boubajoker/LinKutter/", "_blank");
 });
 
 navbar_btn_03.addEventListener('click', ()=>{
-    if (this.check_network()) {
-        window.location = "./socials.html";
-    };
+    window.location = "./socials.html";
 });
 
 
@@ -121,9 +78,7 @@ document.addEventListener('contextmenu', (e)=>{
 });
 
 btn_01.addEventListener('click', ()=>{
-    if (this.check_network()) {
-        window.open("https://github.com/Boubajoker/LinKutter/", "_blank");
-    }
+    window.open("https://github.com/Boubajoker/LinKutter/", "_blank");
 });
 
 btn_02.addEventListener('click', ()=>{

@@ -43,3 +43,7 @@
         - Removed un-used stuff. 
     - Fixed some bugs :bug::gun: !
 }
+
+- v0.0.1 Alpha B-2 Update0.2.1 {
+    - Fixed a little bug :bug::gun: !
+}

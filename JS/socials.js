@@ -10,35 +10,23 @@ let name_title_01 = document.querySelector('#name_title_01');
 let name_title_02 = document.querySelector('#name_title_02');
 
 boubajoker_github_profile.addEventListener('click', ()=>{
-    if (this.check_network()) {
-        window.open("https://github.com/Boubajoker/", "_blank");
-    };
+    window.open("https://github.com/Boubajoker/", "_blank");
 });
 boubajoker_twitter_profile.addEventListener('click', ()=>{
-    if (this.check_network()) {
-        this.display_popup(0.7, 0.9, "Not aividable yet");
-    };
+    this.display_popup(0.7, 0.9, "Not aividable yet");
 });
 boubajoker_instagram_profile.addEventListener('click', ()=>{
-    if (this.check_network()) {
-        this.display_popup(0.7, 0.9, "Not aividable yet");
-    };
+    this.display_popup(0.7, 0.9, "Not aividable yet");
 });
 
 lazarsas_github_profile.addEventListener('click', ()=>{
-    if (this.check_network()) {
-        window.open("https://github.com/Lazarsas/", "_blank");
-    };
+    window.open("https://github.com/Lazarsas/", "_blank");
 });
 lazarsas_twitter_profile.addEventListener('click', ()=>{
-    if (this.check_network()) {
-        this.display_popup(0.7, 0.9, "Not aividable yet");
-    };
+    this.display_popup(0.7, 0.9, "Not aividable yet");
 });
 lazarsas_instagram_profile.addEventListener('click', ()=>{
-    if (this.check_network()) {
-        this.display_popup(0.7, 0.9, "Not aividable yet");
-    };
+    this.display_popup(0.7, 0.9, "Not aividable yet");
 });
 
 if (dark_mode) {
